@@ -1,0 +1,181 @@
+/* 
+
+write your code here
+
+*/
+
+
+@media print {
+    /* _____Task #1_____ */
+
+    .tm-sidebar, section:nth-child(n+3), #about {
+        display: none;
+    }
+
+    .tm-main-content {
+        margin: 0;
+    }
+
+    .tm-banner {
+        height: 200px;
+        padding-bottom: 0;
+    }
+
+    .flex-2-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pad {
+        min-width: 100%;
+        margin: 0;
+        padding: 0 50px;
+    }
+    
+    .tm-section-description {
+        text-decoration: none;
+    }
+    
+    h2.tm-section-title {
+        color:blue;
+    }
+}
+
+@media screen {
+    /* _____Task #2_____ */
+    
+    .thumbnail {
+        border-radius: 50%;
+    }
+    
+    .tm-box-bg-title:hover {
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #76cdd7;
+    }
+    
+    /* _____Task #3_____ */
+    
+    p:first-letter {
+        color: #76cdd7;
+        font-size: 30px;
+    }
+
+    /* _____Task #4_____ */
+
+    .tm-sidebar, .tm-content-box {
+        box-shadow: 0 0 8px #888888;
+    }
+
+    /* _____Task #5_____ */
+
+    #home, section {
+        position: relative;
+    }
+
+    #home::after,
+    section::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top: 25px solid #76cdd7; 
+        border-right: 130px solid transparent;
+    }
+
+    .blocks::after {
+        border: none;
+    }
+
+    /* _____Task #6_____ */
+
+    .active h2 {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+
+    /* _____Task #7_____ */
+
+    h2 + p {
+        font-style: italic;
+    }
+
+    /* _____Task #8_____ */
+
+    .tm-section-description {
+        text-indent: 25px;
+        line-height: 1.7;
+    }
+
+    /* _____Task #9_____ */
+
+    .heading a:visited {
+        color: silver;
+    }
+
+    .heading a:hover {
+        color: #76cdd7;
+    }
+
+    .text{
+        position: relative;
+    }
+
+    .text::after {
+        content: 'New';
+        position: absolute;
+        color: red;
+        font-size: 12px;
+        bottom: 7px;
+    }
+
+    .heading a {
+        color: black;
+    }
+
+    .heading h2{
+        text-align: center;
+        color: #76cdd7;
+    }
+
+    /* _____Task #10_____ */
+
+    .blocks .tm-content-box .box:nth-child(2n+1){
+        background-color: #ececec;
+    }
+
+    .box p:first-letter{
+        color: black;
+    }
+
+    /* _____Task #11_____ */
+
+    .tm-sidebar .tm-nav-item:not(:last-child){
+        border-bottom: 2px dotted silver;
+    }
+
+    .tm-main-nav {
+        padding: 0;
+    }
+
+    /* _____Task #12_____ */
+
+    [type="text"],
+    [type="submit"] {
+        color: red;
+    }
+
+    .mandatory-field::after {
+        content: "*";
+        top: 0;
+        right: 5px;
+        color: red;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .submit-btn:hover {
+        background-color: #76cdd7;
+        border-color: transparent; 
+    }
+}
