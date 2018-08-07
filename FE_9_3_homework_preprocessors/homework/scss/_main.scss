@@ -1,0 +1,221 @@
+// _____Mixin_____
+
+@mixin contentText() {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    color: $contentText;
+}
+
+@mixin cardTitle() {
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 1.8;
+    color: $cardTitle;
+}
+
+@mixin contentTitle() {
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1.8;
+    text-align: right;
+    margin-top: 80px;
+    color: $linksButtonAboutContactTitle;
+}
+
+// _____Global_____
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $mineFont;
+    background-color: $backgroundColor;
+}
+
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// _____Header_____
+
+header {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    
+    .logo {
+        width: 470px;
+        
+        img {
+            height: 100%;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        
+        a {
+            text-decoration: none;
+            padding: 20px 78px;
+            border: 1px;
+            border-color: $lineColor;
+            border-style: solid none;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+            color: $linksButtonAboutContactTitle;
+            font-size: 22px;
+        }
+
+        a:hover {
+            color: $textButtonTextHover;
+            background-color: $hoverColor;
+        }
+    }
+}
+
+// _____Toolbar_____
+
+.toolbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+    [placeholder="Search"] {
+        color: $linksButtonAboutContactTitle;
+        padding: 10px 15px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        border: 2px solid $linksButtonAboutContactTitle;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    
+    ::placeholder {
+        color: $linksButtonAboutContactTitle;
+    }
+}
+
+// _____List_____
+
+.post-list {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    article {
+        width: 49%;
+        margin-bottom: 20px;
+        
+        img {
+            width: 100%;
+            padding: 10px;
+            background-color: $cardBackground;
+        }
+
+        div {
+            padding: 20px;
+            margin-top: -15px;
+            background-color: $cardBackground;
+
+            .post-description {
+                padding: 10px;
+                border-bottom: 1px solid $lineColor;
+                color: $postDescription;
+            }
+
+            h3 {
+                @include cardTitle;
+            }
+            
+            p {
+                @include contentText;
+            }
+        }
+    }
+}
+
+// _____About_____
+
+.about {
+    width: 100%;
+
+    h1 {
+        @include contentTitle;
+    }
+    
+    p {
+        @include contentText;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+// _____Contact_____
+
+.contact-form {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: right;
+
+    h1 {
+        @include contentTitle;
+    }
+
+    h4 {
+        color: $linksButtonAboutContactTitle;
+    }
+
+    form {
+        margin-top: 30px;
+
+        .form-control {
+            width: 100%;
+            color: $inputText;
+            padding: 15px 15px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            border: 1px solid $lineColor;;
+            box-shadow: none;
+            background-color: transparent;
+        }
+    
+        textarea {
+            height: 140px;
+        }
+        
+        ::placeholder {
+            color: $inputText;
+        }
+    
+        .btn {
+            padding: 14px 100px;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: bold;
+            background: $linksButtonAboutContactTitle;
+            border: 1px solid transparent;
+            color: $textButtonTextHover;
+        }
+
+        .btn:hover {
+            background-color: $hoverColor;
+        }
+    }
+}
+
+// _____Footer_____
+
+span {
+    color: $contentText;
+}
