@@ -1,4 +1,5 @@
-# fl-9
+# FRONT-END (JAVASCRIPT) [LVIV] SUMMER 2018
+This training is dedicated to the approaches, technologies and instruments in development of visual elements that users see and interact with in a web application, or in other words, Front-end Development. It is designed for students who have programming skills and the basic understanding of web technologies.
 
 ###### Homework 1
 > ### __HTML Basics__
