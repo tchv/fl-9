@@ -20,3 +20,8 @@ This training is dedicated to the approaches, technologies and instruments in de
 > ### __CSS Layouts__
 > ###### ![web](https://tchv.github.io/fl9/fl9-src/web.png) [VIEW WEBSITE](https://tchv.github.io/fl9/fl-9-css-layouts/)
 > ###### ![code](https://tchv.github.io/fl9/fl9-src/code.png) [VIEW CODE](https://github.com/tchv/fl-9/blob/master/FE_9_4_homework_css-layouts/homework/css/style.css)
+
+###### Homework 5
+> ### __Responsive__
+> ###### ![web](https://tchv.github.io/fl9/fl9-src/web.png) [VIEW WEBSITE](https://tchv.github.io/fl9/fl-9-responsive/src/)
+> ###### ![code](https://tchv.github.io/fl9/fl9-src/code.png) [VIEW CODE](https://github.com/tchv/fl-9/tree/master/FE_9_5_homework_responsive/homework/src)
