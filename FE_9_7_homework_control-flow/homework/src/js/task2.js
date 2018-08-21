@@ -2,13 +2,13 @@
 
 const rangeStartNumber = 5;
 const prizeStartValue = 10;
-const attemptStartValue = 1;
 
 let prizeTotalValue = 0,
     prizeMaxValue = prizeStartValue,
     rangeTotalValue = rangeStartNumber,
     randomNumberValue,
-    i;
+    i,
+    attemptStartValue = 1;
 
 let play = confirm('Do you want to play a game?');
 
@@ -19,7 +19,7 @@ if (play === true) {
 }
 
 function startGame() {
-    prizeMaxValue;
+    prizeMaxValue = prizeStartValue;
     i = 3;
     randomNumber();
     userNumber();
@@ -40,6 +40,7 @@ Possible prize on current attempt: ${prizeMaxValue}`,
 // ----------------------------------------------------
         i--;
         prizeMaxValue = Math.floor(prizeMaxValue / 2);
+
         if (i >= attemptStartValue) {
             userNumber();
         } else {
