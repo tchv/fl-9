@@ -59,8 +59,8 @@ Possible prize on current attempt: ${prizeMaxValue}`,
 `Congratulation! Your prize is: ${prizeTotalValue}
 Do you want to continue?`)) {
 // ----------------------------------------------------
-            rangeTotalValue = rangeStartNumber * 2;
-            prizeMaxValue = prizeStartValue * 3;
+            rangeTotalValue = rangeTotalValue * 2;
+            prizeMaxValue = prizeMaxValue * 3;
             startGame();
         } else {
             alert(`You win ${prizeTotalValue}`)
