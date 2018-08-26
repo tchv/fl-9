@@ -8,9 +8,9 @@ function reverseNumber(number) {
     b && (number *= one);
 
     while (number > 0) {
-    a *= ten;
-    a += number % ten;
-    number = parseInt(number / ten);
+        a *= ten;
+        a += number % ten;
+        number = parseInt(number / ten);
     }
     return b ? -a : a;
 }
