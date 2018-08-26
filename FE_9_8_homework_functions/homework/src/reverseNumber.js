@@ -1,13 +1,16 @@
 function reverseNumber(number) {
+    const one = -1;
+    const ten = 10;
+
     let a = 0,
     b = 0 > number;
 
-    b && (number *= -1);
+    b && (number *= one);
 
     while (number > 0) {
-    a *= 10;
-    a += number % 10;
-    number = parseInt(number / 10);
+    a *= ten;
+    a += number % ten;
+    number = parseInt(number / ten);
     }
     return b ? -a : a;
 }
