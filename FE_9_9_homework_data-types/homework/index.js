@@ -73,12 +73,17 @@ function values(object) {
 
 function showFormattedDate(date) {
     const months = [
-        'Jan', 'Feb',
-
-        'Mar', 'Apr', 'May',
-        'Jun', 'Jul', 'Aug',
-        'Sep', 'Oct', 'Nov',
-
+        'Jan',
+        'Feb',
+        'Mar',
+        'Apr',
+        'May',
+        'Jun',
+        'Jul',
+        'Aug',
+        'Sep',
+        'Oct',
+        'Nov',
         'Dec'
     ];
 
