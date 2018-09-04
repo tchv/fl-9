@@ -54,3 +54,19 @@ function show() {
  
 document.getElementById('add').addEventListener('click', add);
 show();
+
+let clearButtons = document.getElementsByClassName('material-icons');
+
+for (let i = 0; i < clearButtons.length; i++){
+
+  clearButtons[i].onclick = function(e){
+  
+    let selector = this.getAttribute('data-clear-selector');
+    
+    document
+      .querySelectorAll(selector)
+      .forEach(function(item, idx){
+        item.value = '';
+      });
+  };
+}
